@@ -1,0 +1,28 @@
+:root{
+  --bg: #0b0f14;
+  --card: #0f1720;
+  --muted: #98a0a6;
+  --primary: #4f46e5;
+}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: #e6eef6;
+  -webkit-font-smoothing:antialiased;
+}
+.avatar{
+  border: 4px solid rgba(255,255,255,0.06);
+  box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+}
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.03);
+}
+.project-card img{
+  height: 100%;
+  object-fit: cover;
+}
+.text-primary{ color: var(--primary) !important; }
+a { color: #cbd5ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+footer p a { color: var(--primary); }

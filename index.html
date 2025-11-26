@@ -3,142 +3,154 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Awais — Developer Portfolio</title>
+  <title>Awais — Futuristic Portfolio</title>
+  <meta name="description" content="Awais — React Native & Frontend developer portfolio (futuristic design)">
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS (utility) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="React Native / Frontend developer portfolio — Awais">
-</head>
-<body class="bg-dark text-light">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-4 py-3">
-    <a class="navbar-brand fw-bold" href="#">Awais</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#nav" aria-controls="nav" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg">
+  <!-- animated background layers -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="glow-grid"></div>
+  </div>
+
+  <nav class="nav-bar px-4">
+    <div class="brand">Awais</div>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- HERO -->
-  <header class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <h1 class="display-5 fw-bold">Hi — I’m <span class="text-primary">Awais</span></h1>
-        <p class="lead">React Native & Frontend developer. I build mobile apps and web interfaces that are fast, accessible and maintainable.</p>
-        <p>
-          <a href="#projects" class="btn btn-primary me-2">See Projects</a>
-          <a href="https://github.com/awaishaniflhr" target="_blank" class="btn btn-outline-light">GitHub</a>
-        </p>
-      </div>
-      <div class="col-lg-5 text-center">
-        <!-- replace avatar.png with your photo -->
-        <img src="avatar.png" alt="avatar" class="avatar rounded-circle mt-3" width="180" height="180">
-      </div>
-    </div>
-  </header>
+  <main class="container hero-wrap">
+    <section class="row align-items-center hero">
+      <div class="col-lg-7 hero-left">
+        <p class="eyebrow">React Native · Frontend</p>
+        <h1 class="neon">
+          Hi — I'm <span class="accent">Awais</span>
+        </h1>
+        <p class="lead muted">I build fast, maintainable mobile apps and web interfaces with a product-minded approach.</p>
 
-  <!-- SKILLS -->
-  <section id="skills" class="container py-4">
-    <h2 class="h4 mb-3">Top Skills</h2>
-    <div class="row g-3">
-      <div class="col-md-3"><div class="card bg-secondary text-light p-3">React Native</div></div>
-      <div class="col-md-3"><div class="card bg-secondary text-light p-3">React.js</div></div>
-      <div class="col-md-3"><div class="card bg-secondary text-light p-3">JavaScript / TypeScript</div></div>
-      <div class="col-md-3"><div class="card bg-secondary text-light p-3">REST APIs / Firebase</div></div>
-    </div>
-  </section>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-cta" href="#projects">See Projects</a>
+          <a class="btn btn-outline btn-ghost" href="https://github.com/awaishaniflhr" target="_blank">GitHub</a>
+        </div>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="container py-5">
-    <h2 class="h4 mb-4">Projects — Featured</h2>
-
-    <div class="row g-4">
-      <!-- PROJECT CARD -->
-      <div class="col-md-6">
-        <div class="card project-card h-100">
-          <div class="row g-0">
-            <div class="col-5">
-              <img src="project1.png" class="img-fluid rounded-start" alt="Project 1">
-            </div>
-            <div class="col-7">
-              <div class="card-body">
-                <h5 class="card-title">Project One</h5>
-                <p class="card-text small">Short summary: problem solved and tech used (React Native, Firebase).</p>
-                <p class="mb-1"><strong>Tech:</strong> React Native · Redux · Firebase</p>
-                <a href="https://github.com/awaishaniflhr/project-one" target="_blank" class="stretched-link">View on GitHub</a>
-              </div>
-            </div>
-          </div>
+        <div class="meta-chips" aria-hidden="true">
+          <span>Perf</span><span>CI/CD</span><span>Accessibility</span>
         </div>
       </div>
 
-      <!-- duplicate for other projects -->
-      <div class="col-md-6">
-        <div class="card project-card h-100">
-          <div class="row g-0">
-            <div class="col-5">
-              <img src="project2.png" class="img-fluid rounded-start" alt="Project 2">
-            </div>
-            <div class="col-7">
-              <div class="card-body">
-                <h5 class="card-title">Project Two</h5>
-                <p class="card-text small">Short summary: web dashboard built with React.js and Bootstrap.</p>
-                <p class="mb-1"><strong>Tech:</strong> React · Vite · Bootstrap</p>
-                <a href="https://github.com/awaishaniflhr/project-two" target="_blank" class="stretched-link">View on GitHub</a>
-              </div>
-            </div>
-          </div>
+      <div class="col-lg-5 hero-right">
+        <div class="avatar-glass">
+          <img src="avatar.png" alt="Awais avatar" class="avatar" />
+          <div class="avatar-ring"></div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Skills -->
+    <section id="skills" class="mt-5">
+      <h3 class="section-title">Top Skills</h3>
+      <div class="skills-grid">
+        <div class="chip">React Native</div>
+        <div class="chip">React.js</div>
+        <div class="chip">TypeScript</div>
+        <div class="chip">State mgmt (Redux/Zustand)</div>
+        <div class="chip">Firebase / REST</div>
+        <div class="chip">Design-minded</div>
+      </div>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="container py-4">
-    <h2 class="h4 mb-3">Experience</h2>
-    <ul class="list-unstyled">
-      <li class="mb-3">
-        <h6 class="mb-0">React Native Developer — Freelance</h6>
-        <small class="text-muted">2022 — Present</small>
-        <p class="mb-0 small">Built and shipped production apps for clients; implemented CI/CD and optimized performance.</p>
-      </li>
-    </ul>
-  </section>
+    <!-- Projects -->
+    <section id="projects" class="mt-5">
+      <h3 class="section-title">Projects — Featured</h3>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="project1.png" alt="Project One screenshot">
+            </div>
+            <div class="project-body">
+              <h5>Project One</h5>
+              <p class="small muted">Problem-solution brief. Mobile app that improved onboarding & retention.</p>
+              <p class="small"><strong>Tech:</strong> React Native · Firebase · Redux</p>
+              <a class="project-link" href="https://github.com/awaishaniflhr/project-one" target="_blank">View on GitHub →</a>
+            </div>
+          </article>
+        </div>
 
-  <!-- CONTACT -->
-  <footer id="contact" class="container py-5">
-    <h2 class="h4 mb-3">Contact</h2>
-    <p class="mb-1">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    <p class="mb-1">GitHub: <a href="https://github.com/awaishaniflhr" target="_blank">github.com/awaishaniflhr</a></p>
-    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
-  </footer>
+        <div class="col-md-6">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="project2.png" alt="Project Two screenshot">
+            </div>
+            <div class="project-body">
+              <h5>Project Two</h5>
+              <p class="small muted">Web dashboard & admin tools for content management and analytics.</p>
+              <p class="small"><strong>Tech:</strong> React · Vite · Bootstrap</p>
+              <a class="project-link" href="https://github.com/awaishaniflhr/project-two" target="_blank">View on GitHub →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- Bootstrap JS (bundle includes Popper) -->
+    <!-- Experience -->
+    <section id="experience" class="mt-5">
+      <h3 class="section-title">Experience</h3>
+      <div class="card glass-card p-4">
+        <h6 class="mb-1">React Native Developer — Freelance</h6>
+        <small class="muted">2022 — Present</small>
+        <p class="mt-2 small muted">Built and shipped production apps for clients; implemented CI/CD pipelines, performance tuning and accessibility improvements.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="mt-5 mb-6">
+      <h3 class="section-title">Contact</h3>
+      <div class="card glass-card p-4">
+        <p class="mb-1">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p class="mb-1">GitHub: <a href="https://github.com/awaishaniflhr" target="_blank">github.com/awaishaniflhr</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Micro interactions -->
   <script>
-    // Smooth scroll for nav links
-    document.querySelectorAll('a.nav-link, a[href^="#"]').forEach(a=>{
+    // small tilt effect for avatar
+    const avatar = document.querySelector('.avatar-glass');
+    if(avatar){
+      avatar.addEventListener('mousemove', e=>{
+        const rect = avatar.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        avatar.style.transform = `rotateY(${x * 6}deg) rotateX(${ -y * 6}deg) translateZ(6px)`;
+      });
+      avatar.addEventListener('mouseleave', ()=> avatar.style.transform = '');
+    }
+
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click', e=>{
-        const href = a.getAttribute('href');
-        if(href && href.startsWith('#')){
-          e.preventDefault();
-          document.querySelector(href).scrollIntoView({behavior:'smooth'});
-        }
+        e.preventDefault();
+        const el = document.querySelector(a.getAttribute('href'));
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
       });
     });
   </script>
